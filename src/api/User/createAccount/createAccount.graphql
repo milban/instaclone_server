@@ -1,0 +1,6 @@
+type Query {
+  something: String!
+}
+type Mutation {
+  createAccount(userName: String!, email: String!, firstName: String, lastName: String!, bio: String): User!
+}
