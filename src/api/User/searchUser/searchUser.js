@@ -4,7 +4,7 @@ export default {
   Query: {
     searchUser: (_, args) => {
       const { term } = args
-      const user = prisma.users({
+      const users = prisma.users({
         where: {
           OR: [
             {
@@ -19,7 +19,7 @@ export default {
           ]
         }
       })
-      return user
+      return users
     }
   }
 }
